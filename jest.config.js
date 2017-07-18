@@ -4,6 +4,6 @@ module.exports = {
     '/node_modules/',
   ],
   moduleNameMapper: {
-    '\\.(css)$': 'identity-obj-proxy'
-  }
+    '\\.(css)$': 'identity-obj-proxy',
+  },
 };
