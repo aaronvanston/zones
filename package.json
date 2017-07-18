@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/aaronvanston/zones/issues"
   },
-  "homepage": "https://github.com/aaronvanston/zones#readme"
+  "homepage": "https://github.com/aaronvanston/zones#readme",
+  "dependencies": {
+    "prop-types": "^15.5.10",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "redux": "^3.7.2"
+  }
 }
