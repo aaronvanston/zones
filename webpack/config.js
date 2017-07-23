@@ -10,7 +10,7 @@ module.exports = {
   devtool: PRODUCTION ? undefined : 'eval',
 
   entry: PRODUCTION ? [
-    './src/index'
+    './src/index',
   ] : [
     'react-hot-loader/patch',
     `webpack-dev-server/client?${ASSET_HOST}`,
@@ -28,14 +28,14 @@ module.exports = {
     new ExtractTextPlugin('bundle-[hash].css'),
     new webpack.optimize.UglifyJsPlugin({
       minimize: true,
-      output: { comments: false }
+      output: { comments: false },
     }),
     new webpack.optimize.OccurrenceOrderPlugin(),
     new webpack.optimize.ModuleConcatenationPlugin(),
     new HtmlWebpackPlugin({
       template: './src/index.html',
       inject: 'body',
-    })
+    }),
   ] : [
     new webpack.NamedModulesPlugin(),
     new webpack.HotModuleReplacementPlugin(),
@@ -62,11 +62,11 @@ module.exports = {
               importLoaders: 1,
               modules: true,
               localIdentName: '[name]__[local]___[hash:base64:5]',
-              minimize: true
+              minimize: true,
             },
           },
           'postcss-loader',
-        ]
+        ],
       }) : [
         'style-loader',
         {
@@ -89,11 +89,11 @@ module.exports = {
             loader: 'css-loader',
             options: {
               autoprefixer: false,
-              minimize: true
+              minimize: true,
             },
           },
           'postcss-loader',
-        ]
+        ],
       }) : [
         'style-loader',
         'css-loader',

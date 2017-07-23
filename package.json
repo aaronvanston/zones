@@ -9,7 +9,7 @@
     "test": "jest",
     "test:watch": "yarn test -- --watch",
     "lint": "yarn lint:js && yarn lint:style",
-    "lint:js": "eslint .",
+    "lint:js": "eslint --ignore-path .gitignore .",
     "lint:style": "stylelint 'src/**/*.css'",
     "clean:dist": "rimraf ./dist"
   },

@@ -1,7 +1,7 @@
 import webpack from 'webpack';
 import WebpackDevServer from 'webpack-dev-server';
 
-import config from './config.js';
+import config from './config';
 
 new WebpackDevServer(webpack(config), {
   publicPath: config.output.publicPath,
