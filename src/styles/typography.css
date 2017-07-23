@@ -1,0 +1,39 @@
+@import "variables";
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,500");
+
+:root {
+  -webkit-font-smoothing: antialiased;
+  font-family: var(--base-font-family);
+  font-size: var(--base-spacing-unit);
+  font-weight: var(--base-font-weight);
+  line-height: var(--base-line-height);
+  letter-spacing: var(--base-letter-spacing);
+}
+
+body {
+  font-size: var(--base-font-size);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: var(--base-font-weight);
+}
+
+button,
+input,
+textarea,
+select {
+  font-family: inherit;
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+strong,
+b {
+  font-weight: var(--bold-font-weight);
+}

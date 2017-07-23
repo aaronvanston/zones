@@ -1,0 +1,31 @@
+:root {
+  /* Media queries */
+  @custom-media --sm (width >= 30rem);
+  @custom-media --md (width >= 48rem);
+  @custom-media --lg (width >= 60rem);
+  @custom-media --xl (width >= 95rem);
+
+  /* Typography */
+  --base-font-size: 14px;
+  --base-font-weight: 400;
+  --bold-font-weight: 500;
+  --heavy-font-weight: 600;
+  --base-font-family: "Quicksand", sans-serif;
+  --base-line-height: 1.5;
+  --base-letter-spacing: -0.00625rem;
+
+  /* Sizing */
+  --base-spacing-unit: 16px;
+  --border-radius: 4px;
+
+  /* Z indexes */
+  --z-index-dropdown: 60;
+  --z-index-fixed: 50;
+  --z-index-modal: 40;
+  --z-index-modal-backdrop: 30;
+  --z-index-sticky: 20;
+  --z-index-overlay: 10;
+
+  /* Colors */
+  --base-background-color: #f1f1f1;
+}
