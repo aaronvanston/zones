@@ -4,8 +4,7 @@
     "stylelint-order"
   ],
   "rules": {
-    "no-unsupported-browser-features": null,
-    "selector-no-type": [true, { "ignore": "descendant" }],
+    "selector-max-type": [2, { ignore: "descendant" }],
     "scss/selector-no-redundant-nesting-selector": null,
     "order/properties-order": [["composes"], { unspecified: "bottom" }],
     "order/order": [
