@@ -2,6 +2,8 @@
 
 Zones features a simple user interface to add, update and view various time zones across the world.
 
+**Note:** Zones is a **work in progress** project. Checkout the current [GitHub Project for Zones v1](https://github.com/aaronvanston/zones/projects/1) to track its progress.
+
 ## Why?
 
 Zones is a simple project aimed at implementing a minimal boilerplate codebase for React. It's use is to demonstrate and build up a real world example of various front-end tooling. Zones will be the starting point (boilerplate) for any further React project I build.
