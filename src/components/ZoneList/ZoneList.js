@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { Card, AddNewCard } from '../';
+import { Card, AddNewZone } from '../';
 import styles from './ZoneList.css';
 
 // TODO GENERATE KEY FOR CARD BASED ON GMT + LOCATION
@@ -9,7 +9,7 @@ import styles from './ZoneList.css';
 const ZoneList = ({ zones }) => (
   <div className={styles.list}>
     {zones.map(zone => <Card gmt={zone.gmt} location={zone.location} />)}
-    <AddNewCard />
+    <AddNewZone />
   </div>
 );
 

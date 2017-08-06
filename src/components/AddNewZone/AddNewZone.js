@@ -2,9 +2,9 @@ import React from 'react';
 
 import { CardContainer } from '../';
 
-import styles from './AddNewCard.css';
+import styles from './AddNewZone.css';
 
-const AddNewCard = () => (
+const AddNewZone = () => (
   <CardContainer>
     <button className={styles.card}>
       <span className={styles.heading}>Add new</span>
@@ -14,4 +14,4 @@ const AddNewCard = () => (
 );
 
 
-export default AddNewCard;
+export default AddNewZone;
