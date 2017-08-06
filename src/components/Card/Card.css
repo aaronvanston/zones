@@ -2,14 +2,39 @@
 
 .card {
   min-height: 22rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: #fff;
   border-radius: var(--border-radius);
   box-shadow: 0 2px 6px 0 rgba(150, 150, 150, 0.3);
   padding: 0.75rem;
   transition: 0.12s;
+  color: #fff;
+
+  background-image: linear-gradient(-180deg, #28ADBD 0%, #B2D7B7 100%);
 
   &:hover {
     box-shadow: 0 8px 20px 0 rgba(150, 150, 150, 0.3);
     transform: translateY(-0.25rem);
   }
+}
+
+.location {
+  font-size: 1.5rem;
+  font-weight: var(--bold-font-weight);
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.time {
+  font-size: 6.25rem;
+  line-height: 1;
+}
+
+.gmt {
+  font-weight: var(--bold-font-weight);
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  opacity: 0.5;
 }

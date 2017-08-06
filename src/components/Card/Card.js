@@ -8,8 +8,9 @@ import styles from './Card.css';
 const Card = ({ gmt, location }) => (
   <CardContainer>
     <div className={styles.card}>
-      <div>Location: {location}</div>
-      <div>GMT: {gmt}</div>
+      <div className={styles.location}>{location}</div>
+      <div className={styles.time}>12:15</div>
+      <div className={styles.gmt}>gmt{gmt >= 0 ? `+${gmt}` : gmt}</div>
     </div>
   </CardContainer>
 );
