@@ -1,9 +1,8 @@
 :root {
   /* Media queries */
-  @custom-media --sm (width >= 30rem);
+  @custom-media --sm (width >= 35rem);
   @custom-media --md (width >= 48rem);
   @custom-media --lg (width >= 60rem);
-  @custom-media --xl (width >= 95rem);
 
   /* Typography */
   --base-font-size: 14px;
