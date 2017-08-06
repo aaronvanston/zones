@@ -1,0 +1,22 @@
+@import "variables";
+
+.overlay {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: color(#000 alpha(75%));
+  z-index: var(--z-index-modal-backdrop);
+}
+
+.modal {
+  background-color: #fff;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  outline: none;
+  z-index: var(--z-index-modal);
+}

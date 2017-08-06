@@ -4,4 +4,5 @@ export Card from './Card/Card';
 export CardContainer from './CardContainer/CardContainer';
 export EditButton from './EditButton/EditButton';
 export Header from './Header/Header';
+export Modal from './Modal/Modal';
 export ZoneList from './ZoneList/ZoneList';
