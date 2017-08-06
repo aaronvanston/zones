@@ -1,0 +1,17 @@
+@import "variables";
+
+:root {
+  --card-width: 17.5rem;
+  --gutter-width: 0.375rem;
+}
+
+.container {
+  margin-bottom: 1rem;
+
+  @media (--sm) {
+    max-width: var(--card-width);
+    flex-basis: var(--card-width);
+    padding-left: var(--gutter-width);
+    padding-right: var(--gutter-width);
+  }
+}
