@@ -1,13 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import { CardContainer } from '../';
+
 import styles from './Card.css';
 
 const Card = ({ gmt, location }) => (
-  <div className={styles.wrapper}>
-    <div>{gmt}</div>
-    <div>{location}</div>
-  </div>
+  <CardContainer>
+    <div className={styles.card}>
+      <div>Location: {location}</div>
+      <div>GMT: {gmt}</div>
+    </div>
+  </CardContainer>
 );
 
 Card.propTypes = {
