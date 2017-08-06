@@ -1,0 +1,34 @@
+@import "variables";
+
+.card {
+  min-height: 22rem;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background: transparent;
+  border-radius: var(--border-radius);
+  border: 3px solid #494646;
+  opacity: 0.15;
+  transition: 0.12s;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.heading {
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  line-height: 1;
+  font-weight: var(--heavy-font-weight);
+}
+
+.sub {
+  composes: heading;
+  font-size: 2.25rem;
+  font-weight: var(--base-font-weight);
+}
