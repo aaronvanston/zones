@@ -1,14 +1,14 @@
 @import "variables";
+@import "mixins";
 
 .card {
+  @apply --reset-button;
+
   min-height: 22rem;
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
-  background: transparent;
   border-radius: var(--border-radius);
   border: 3px solid #494646;
   opacity: 0.15;
