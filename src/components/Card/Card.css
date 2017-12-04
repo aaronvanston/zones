@@ -13,7 +13,7 @@
   transition: 0.12s;
   color: #fff;
 
-  background-image: linear-gradient(-180deg, #28ADBD 0%, #B2D7B7 100%);
+  background-image: linear-gradient(-180deg, #28adbd 0%, #b2d7b7 100%);
 
   &:hover {
     box-shadow: 0 8px 20px 0 rgba(150, 150, 150, 0.3);
