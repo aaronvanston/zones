@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import ReactModal from 'react-modal';
+
 import styles from './Modal.css';
 
 const Modal = ({ isOpen, contentLabel, children, ...props }) => (

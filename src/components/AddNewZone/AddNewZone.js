@@ -32,7 +32,7 @@ class AddNewZone extends React.Component {
           onRequestClose={this.closeModal}
           contentLabel="Add new zone"
         >
-          <LocationInput />
+          <LocationInput handleClose={this.closeModal} />
         </Modal>
 
         <button className={styles.card} onClick={this.openModal}>

@@ -1,5 +1,6 @@
 import React from 'react';
 import Autosuggest from 'react-autosuggest';
+import PropTypes from 'prop-types';
 
 import { CloseButton } from '../';
 
@@ -68,6 +69,7 @@ class LocationInput extends React.Component {
 
   render() {
     const { value, suggestions } = this.state;
+    const { handleClose } = this.props;
 
     const inputProps = {
       placeholder: 'Enter a location',
@@ -87,10 +89,14 @@ class LocationInput extends React.Component {
           inputProps={inputProps}
           alwaysRenderSuggestions
         />
-        <CloseButton />
+        <CloseButton onClick={() => handleClose()} />
       </div>
     );
   }
 }
+
+LocationInput.propTypes = {
+  handleClose: PropTypes.func.isRequired,
+};
 
 export default LocationInput;
