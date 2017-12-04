@@ -15,7 +15,6 @@
 
 .modal {
   background-color: #fff;
-  overflow: auto;
   -webkit-overflow-scrolling: touch;
   outline: none;
   z-index: var(--z-index-modal);

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { CardContainer, Modal } from '../';
+import { CardContainer, Modal, LocationInput } from '../';
 
 import styles from './AddNewZone.css';
 
@@ -32,7 +32,7 @@ class AddNewZone extends React.Component {
           onRequestClose={this.closeModal}
           contentLabel="Add new zone"
         >
-          Add New Zone
+          <LocationInput />
         </Modal>
 
         <button className={styles.card} onClick={this.openModal}>
