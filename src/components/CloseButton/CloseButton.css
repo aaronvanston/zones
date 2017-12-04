@@ -1,0 +1,22 @@
+@import "variables";
+@import "mixins";
+
+.close {
+  @apply --reset-button;
+  position: absolute;
+  min-height: 2.75rem;
+  right: 0;
+  top: -2.75rem;
+  color: #fff;
+  width: auto;
+  padding: 0;
+  font-size: 1rem;
+  font-weight: var(--bold-font-weight);
+  opacity: 0.5;
+  transition: 0.12s;
+  text-transform: uppercase;
+
+  &:hover {
+    opacity: 0.75;
+  }
+}
